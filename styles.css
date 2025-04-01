@@ -1,0 +1,329 @@
+/* Base Styles*/
+
+* {
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+/* Navigation*/
+
+nav {
+    background-color: #1a426d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem; /* adjust spacing */
+    flex-wrap: wrap; /* allow wrapping on smaller screens */
+}
+
+    /*dropdown*/
+    .dropdown {
+        float: right;
+        overflow: hidden;
+      }
+      
+    .dropdown .dropbtn {
+        font-size: 20px;  
+        font-weight: bold;
+        border: none;
+        outline: none;
+        color: #d6e1ec;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+        cursor: pointer;
+        box-shadow: none;
+
+      }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: rgb(26, 66, 109, 0.8);
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        right: 0;
+      }
+      
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      
+    .dropdown:hover .dropdown-content {
+        display: block;
+      }
+    /*dropdown*/
+
+.left a,
+.right a {
+    text-decoration: none;
+    margin: 0 0.5rem;
+    color: #d6e1ec; /* adjust as needed */
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+}
+
+.left i{
+    font-size: 1.5rem;
+}
+
+.left i:hover{
+    color:#ebf3c2;
+}
+
+.right a:hover{
+    color:#ebf3c2;
+}
+
+.right a.active{
+    color: #ebf3c2; /* Optional: color change on hover */
+}
+
+.right{
+    display: flex;
+    gap: 1rem; /* space between right-side links */
+    align-items: center;
+    flex-wrap: wrap; /* allows links to wrap on small screens */
+    margin-right: 1rem;
+}
+
+.right.active{
+    color: #ebf3c2;
+}
+
+.dropbtn.active {
+    color: #ebf3c2;
+  }
+
+/* About Section*/ 
+
+#about-section {
+  padding: 2rem;
+  margin: 0 auto;
+  background-color: #f0f1f7;
+  background-image: url(andrew-ruiz-mLsYsjy0h8Q-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: rgba(214, 225, 236, 0.8);
+  padding: 4rem;
+  border-radius: 14px;
+  flex-wrap: wrap; /* Allow wrapping */
+}
+
+.about-content p {
+  flex: 1 1 300px;
+  margin: 0;
+  max-width: 100%;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.headshot {
+  flex: 1 1 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.headshot img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Core Competencies Section*/ 
+
+    #core-competencies {
+        padding: 2rem;
+        background-color: white;
+    }
+
+    /*button styles*/
+
+    button.skills-card {
+        background-color: #d6e1ec;
+        border:none;
+        border-radius: 20px;
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+        width: 100%;
+        text-align: center;
+        padding: 16px;
+        transition: all 0.5s;
+        cursor: pointer;
+      }
+      
+    button.skills-card {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+    
+    button h3{
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: #1a426d;
+    }
+      
+      button:hover{
+        padding-right: 24px;
+        padding-left: 8px;
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+      }
+      
+      button:hover:after {
+        opacity: 1;
+        right: 10px;
+      }
+
+/*Skills Section*/
+
+  #technical-skills {
+    background-color: #f0f1f7;
+    padding: 2rem 0rem 2rem;
+  }
+
+  .skills-header{
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .skills-flex {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+    background-color: #f0f1f7;
+  }
+  .skill-card {
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    margin-top: 0rem;
+    padding: 2rem;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skill-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .logo-row {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .logo-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #1a1a1a;
+  }
+  
+  .logo-item img {
+    width: 40px;
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+
+/*Resume Tab*/
+
+
+
+/*Footer*/
+
+footer {
+    background-color: #1a426d;
+    color: #ffffff;
+    padding: 1rem 0;
+    font-size: 0.875rem;
+}
+
+footer p{
+    text-align: center;
+}
+
+
+/*Mobile View*/
+
+/*mobile - navigation bar*/
+@media (max-width: 768px) {
+  .dropbtn,
+  .right a,
+  .left a {
+    font-size: 16px; /* smaller font for mobile */
+  }
+
+  .left i {
+    font-size: 16px;
+  }
+
+/*mobile - about section*/
+
+.about-content {
+  flex-direction: column;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+.about-content p {
+  font-size: 1rem;
+}
+
+.headshot img {
+  width: 200px;
+  height: auto;
+  margin-top: 0;
+}
+
+.about-section {
+  flex-direction: column;
+  gap: 0.5rem; 
+  align-items: center;
+}
+
+.about-section img {
+  margin-top: 0; /* reset any top margin that might be adding space */
+}
+
+}
