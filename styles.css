@@ -13,7 +13,7 @@ html, body {
     width: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Prevents horizontal scrolling */
+    overflow-x: hidden; 
 }
 
 /* Navigation*/
@@ -23,11 +23,11 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem; /* adjust spacing */
-    flex-wrap: wrap; /* allow wrapping on smaller screens */
+    padding: 1rem; 
+    flex-wrap: wrap; 
 }
 
-    /*dropdown*/
+    /*dropdown starts*/
     .dropdown {
         float: right;
         overflow: hidden;
@@ -47,7 +47,8 @@ nav {
         box-shadow: none;
 
       }
-    .dropdown-content {
+
+      .dropdown-content { /*Organizes home, resume, and contact inside of the hamburger*/
         display: none;
         position: absolute;
         background-color: rgb(26, 66, 109, 0.8);
@@ -56,8 +57,8 @@ nav {
         z-index: 1;
         right: 0;
       }
-      
-    .dropdown-content a {
+
+    .dropdown-content a { /*Organizes links in hamburger vertically*/
         float: none;
         color: black;
         padding: 12px 16px;
@@ -69,13 +70,13 @@ nav {
     .dropdown:hover .dropdown-content {
         display: block;
       }
-    /*dropdown*/
+    /*dropdown ends*/
 
 .left a,
 .right a {
     text-decoration: none;
     margin: 0 0.5rem;
-    color: #d6e1ec; /* adjust as needed */
+    color: #d6e1ec; 
     font-weight: bold;
     font-size: 20px;
     position: relative;
@@ -89,29 +90,21 @@ nav {
     color:#ebf3c2;
 }
 
-.right a:hover{
-    color:#ebf3c2;
+.right .dropdown .dropbtn i:hover { /*change color of hamburger when hover*/
+  color:#ebf3c2;
 }
 
-.right a.active{
-    color: #ebf3c2; /* Optional: color change on hover */
+.right a:hover{ /*change color of categories inside of hamburger when hover*/
+  color:#ebf3c2;
 }
 
 .right{
     display: flex;
-    gap: 1rem; /* space between right-side links */
+    gap: 1rem; 
     align-items: center;
-    flex-wrap: wrap; /* allows links to wrap on small screens */
+    flex-wrap: wrap; 
     margin-right: 1rem;
 }
-
-.right.active{
-    color: #ebf3c2;
-}
-
-.dropbtn.active {
-    color: #ebf3c2;
-  }
 
 /* About Section*/ 
 
@@ -133,7 +126,7 @@ nav {
   background-color: rgba(214, 225, 236, 0.8);
   padding: 4rem;
   border-radius: 14px;
-  flex-wrap: wrap; /* Allow wrapping */
+  flex-wrap: wrap; 
 }
 
 .about-content p {
@@ -291,7 +284,7 @@ footer p{
   .dropbtn,
   .right a,
   .left a {
-    font-size: 16px; /* smaller font for mobile */
+    font-size: 16px; 
   }
 
   .left i {
@@ -323,7 +316,7 @@ footer p{
 }
 
 .about-section img {
-  margin-top: 0; /* reset any top margin that might be adding space */
+  margin-top: 0; 
 }
 
 }
