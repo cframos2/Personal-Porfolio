@@ -171,6 +171,7 @@ nav {
         padding: 16px;
         transition: all 0.5s;
         cursor: pointer;
+        text-decoration: none;
       }
       
     button.skills-card, a.skills-card {
